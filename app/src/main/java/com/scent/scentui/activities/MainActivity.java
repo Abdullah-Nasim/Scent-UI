@@ -2,14 +2,12 @@ package com.scent.scentui.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SimpleItemAnimator;
 
 import com.scent.scentui.R;
-import com.scent.scentui.activities.adapters.BestSellerGroupRecyclerAdapter;
 import com.scent.scentui.activities.adapters.CategoriesRecyclerAdapter;
-import com.scent.scentui.activities.adapters.ItemsRecyclerAdapter;
 import com.scent.scentui.activities.adapters.MainRecyclerAdapter;
 
 import butterknife.BindView;
@@ -37,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         categoriesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        ((SimpleItemAnimator) categoriesRecycler.getItemAnimator()).setSupportsChangeAnimations(false);
         mainRecycler.setLayoutManager(new LinearLayoutManager(this));
-        categoriesRecycler.setAdapter(new CategoriesRecyclerAdapter(mainPresenter.getCategories()));
-        mainRecycler.setAdapter(new MainRecyclerAdapter(mainPresenter.getMainList(), this));
+        categoriesRecycler.setAdapter(new CategoriesRecyclerAdapter(mainPresenter.getCategories(), this));
+        mainRecycler.setAdapter(new MainRecyclerAdapter(mainPresenter.getMainList(), MainActivity.this));
     }
 }

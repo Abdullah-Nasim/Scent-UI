@@ -7,11 +7,13 @@ public class Main {
     public ArrayList<BestSellerGroup> bestSellerGroups;
     public ArrayList<Item> items;
     public boolean isBanner;
+    public boolean isExpanded;
 
-    public Main(String title, ArrayList<BestSellerGroup> bestSellerGroups, ArrayList<Item> items, boolean isBanner) {
+    public Main(String title, ArrayList<BestSellerGroup> bestSellerGroups, ArrayList<Item> items, boolean isBanner, boolean isExpanded) {
         this.title = title;
         this.bestSellerGroups = bestSellerGroups;
         this.items = items;
         this.isBanner = isBanner;
+        this.isExpanded = isExpanded;
     }
 }

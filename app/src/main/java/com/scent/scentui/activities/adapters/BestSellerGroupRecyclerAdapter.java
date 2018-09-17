@@ -15,7 +15,7 @@ public class BestSellerGroupRecyclerAdapter extends RecyclerView.Adapter<SellerG
 
     private ArrayList<BestSellerGroup> mDataSet;
 
-    public BestSellerGroupRecyclerAdapter(ArrayList<BestSellerGroup> mDataSet) {
+    BestSellerGroupRecyclerAdapter(ArrayList<BestSellerGroup> mDataSet) {
         this.mDataSet = mDataSet;
     }
 
@@ -23,10 +23,11 @@ public class BestSellerGroupRecyclerAdapter extends RecyclerView.Adapter<SellerG
     @Override
     public SellerGroupViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new SellerGroupViewHolder(LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.seller_group_item, parent, false));     }
+                .inflate(R.layout.seller_group_item, parent, false)); }
 
     @Override
     public void onBindViewHolder(@NonNull SellerGroupViewHolder holder, int position) {
+
     }
 
     @Override

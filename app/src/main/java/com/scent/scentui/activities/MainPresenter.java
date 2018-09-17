@@ -30,11 +30,11 @@ class MainPresenter {
         categories.add(new Category("Perfumes", ContextCompat.getDrawable(mContext, R.drawable.ic_perfume),  ContextCompat.getDrawable(mContext, R.drawable.ic_perfume_grey), false));
         categories.add(new Category("Powders", ContextCompat.getDrawable(mContext, R.drawable.ic_powder),  ContextCompat.getDrawable(mContext, R.drawable.ic_powder_grey), false));
 
-        categories.add(new Category("Comb", ContextCompat.getDrawable(mContext, R.drawable.ic_comb),  ContextCompat.getDrawable(mContext, R.drawable.ic_comb_grey), false));
+        categories.add(new Category("Combs", ContextCompat.getDrawable(mContext, R.drawable.ic_comb),  ContextCompat.getDrawable(mContext, R.drawable.ic_comb_grey), false));
         categories.add(new Category("Perfumes", ContextCompat.getDrawable(mContext, R.drawable.ic_perfume),  ContextCompat.getDrawable(mContext, R.drawable.ic_perfume_grey), false));
         categories.add(new Category("Powders", ContextCompat.getDrawable(mContext, R.drawable.ic_powder),  ContextCompat.getDrawable(mContext, R.drawable.ic_powder_grey), false));
 
-        categories.add(new Category("Comb", ContextCompat.getDrawable(mContext, R.drawable.ic_comb),  ContextCompat.getDrawable(mContext, R.drawable.ic_comb_grey), false));
+        categories.add(new Category("Combs", ContextCompat.getDrawable(mContext, R.drawable.ic_comb),  ContextCompat.getDrawable(mContext, R.drawable.ic_comb_grey), false));
         categories.add(new Category("Perfumes", ContextCompat.getDrawable(mContext, R.drawable.ic_perfume),  ContextCompat.getDrawable(mContext, R.drawable.ic_perfume_grey), false));
         categories.add(new Category("Powders", ContextCompat.getDrawable(mContext, R.drawable.ic_powder),  ContextCompat.getDrawable(mContext, R.drawable.ic_powder_grey), false));
         return categories;
@@ -60,11 +60,11 @@ class MainPresenter {
         setUpBestSellerGroups();
         setUpItems();
         ArrayList<Main> mainList = new ArrayList<>();
-        mainList.add(new Main("Banner", null, null, true));
-        mainList.add(new Main("Bestseller", bestSellerGroups, null, false));
-        mainList.add(new Main("Lips", null, items, false));
-        mainList.add(new Main("Face", null, items, false));
-        mainList.add(new Main("Nails", null, items, false));
+        mainList.add(new Main("Banner", null, null, true, true));
+        mainList.add(new Main("Bestseller", bestSellerGroups, null, false, true));
+        mainList.add(new Main("Lips", null, items, false, true));
+        mainList.add(new Main("Face", null, items, false, false));
+        mainList.add(new Main("Nails", null, items, false, false));
         return mainList;
     }
 }
