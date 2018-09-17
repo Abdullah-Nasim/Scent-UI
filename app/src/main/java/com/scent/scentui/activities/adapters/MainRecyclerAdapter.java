@@ -40,7 +40,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                     .inflate(R.layout.banner_item, parent, false));
         }else if(viewType == BESTSELLERS_VIEW_TYPE){
             return new MainViewHolder(LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.main_item, parent, false));
+                    .inflate(R.layout.sellers_main_item, parent, false));
         }else if(viewType == MAIN_VIEW_TYPE){
             return new MainViewHolder(LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.main_item, parent, false));
