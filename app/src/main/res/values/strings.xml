@@ -3,4 +3,14 @@
     <string name="bestsellers">Bestsellers</string>
     <string name="view_all">View All</string>
     <string name="lips">Lips</string>
+    <string name="add">ADD</string>
+    <string name="_350_aed">350 AED</string>
+    <string name="hekaya">Hekaya</string>
+    <string name="oud">Oud</string>
+    <string name="gucci">Gucci</string>
+    <string name="intense">Intense</string>
+    <string name="cardy">Cardy</string>
+    <string name="channel">Channel</string>
+    <string name="nails">Nails</string>
+    <string name="face">Face</string>
 </resources>
